@@ -73,7 +73,7 @@ def adicionar_Musicas():
 
 @app.route('/editar/<int:id>')
 def editar(id):
-
+ 
     if session.get('usuario_logado') is None:
         return redirect(url_for('fazer_Login'))
     

@@ -37,7 +37,7 @@ def cadastra_usuario():
 
     form = FormularioCadastroUsuario()
     return render_template('cadastra_usuario.html', titulo = 'Cadastro de Usuario', form = form)
-
+ 
 @app.route('/addUsuario', methods = ['POST',])
 def adicionar_usuario():
     formRecebido = FormularioCadastroUsuario(request.form)

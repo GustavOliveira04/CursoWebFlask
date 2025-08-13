@@ -15,4 +15,4 @@ from views_musica import *
 from views_usuario import *
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True) 

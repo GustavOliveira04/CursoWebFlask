@@ -13,7 +13,7 @@ class FormularioUsuario(FlaskForm):
     usuario = StringField('Usuário', [validators.DataRequired(), validators.length(min = 2, max = 30)])
     senha = PasswordField('Senha', [validators.DataRequired(), validators.length(min = 1, max = 20)])
     logar = SubmitField('Entrar')
-
+ 
 class FormularioCadastroUsuario(FlaskForm):
     nome = StringField('Nome', [validators.DataRequired(), validators.length(min = 1, max = 50)])
     usuario = StringField('Usuário', [validators.DataRequired(), validators.length(min = 1, max = 30)])

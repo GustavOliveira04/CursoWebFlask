@@ -9,5 +9,5 @@ SQLALCHEMY_DATABASE_URI = '{SGBD}://{usuario}:{senha}@{servidor}/{database}'.for
     servidor = 'localhost',
     database = 'playmusica'
 )
-
+ 
 UPLOAD_PASTA = os.path.dirname(os.path.abspath(__file__)) + '/uploads'

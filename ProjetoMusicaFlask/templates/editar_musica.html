@@ -1,0 +1,42 @@
+{% extends "template.html" %}
+
+{% block conteudo %}
+    <form method="post" action="{{ url_for('atualizar') }}" enctype="multipart/form-data">
+        <fieldset>
+
+            <figure class="img-thumbnail mb-2">
+                <img class="img-fluid" src="{{ url_for('imagem', nome_imagem = album_musica) }}">
+
+                <figcaption>
+                    <label for="arquivo" class="form-label">Selecione uma nova imagem
+                        <input type="file" name="arquivo" id="arquivo" accept=".jpg, .jpeg, .png" class="form-control">
+                    </label>
+                </figcaption>
+            </figure>
+
+            {{ musica.csrf_token() }}
+
+                <input type="hidden" name="txtId" value="{{ id }}">
+
+            <div class="mb-2">
+                {{ musica.nome.label(class = "form-label") }}
+                {{ musica.nome(class = "form-control") }}
+            </div>
+
+            <div class="mb-2">
+                {{ musica.banda.label(class = "form-label") }}
+                {{ musica.banda(class = "form-control") }}               
+            </div>
+
+            <div class="mb-2">
+                {{ musica.genero.label(class = "form-label") }}
+                {{ musica.genero(class = "form-control") }}
+            </div>
+
+            <div class="mb-2">
+                {{ musica.cadastrar(class = "btn btn-primary") }}
+            </div>
+
+        </fieldset>
+    </form>
+{% endblock %}

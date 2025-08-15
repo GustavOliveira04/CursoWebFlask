@@ -38,7 +38,7 @@ Ao final do curso, adquiri a habilidade de criar aplicações web funcionais e i
 ## 📸 Captura de Tela do Projeto
 
 <p align="center">
-  <img src="static/img/PrintProjetoFlask.jpg" alt="Tela do projeto">
+  <img src="https://github.com/GustavOliveira04/CursoWebFlask/blob/main/PrintProjetoFlask.jpg" alt="Tela do projeto">
 </p>
 
 ---

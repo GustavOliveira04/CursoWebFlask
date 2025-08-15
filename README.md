@@ -35,5 +35,11 @@ Ao final do curso, adquiri a habilidade de criar aplicações web funcionais e i
 - **Protocolos HTTP**: GET e POST
 - **Autenticação** e **Sessões**
 
+## 📸 Captura de Tela do Projeto
+
+<p align="center">
+  <img src="static/img/PrintProjetoFlask.jpg" alt="Tela do projeto">
+</p>
+
 ---
 📅 **Status**: ✅ Concluído
